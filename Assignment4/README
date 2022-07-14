@@ -1,0 +1,6 @@
+asgn4_19CS30016.c : file having the main function
+asgn4_19CS30016.l : flex specification for lexer in tiny C
+asgn4_19CS30016.y : bison specification for parser in tiny C
+asgn4_19CS30016_test.c : C file with the test code for written parser
+Makefile: The file for running all commands together
+y.output will be generated which has the output results stored in them
