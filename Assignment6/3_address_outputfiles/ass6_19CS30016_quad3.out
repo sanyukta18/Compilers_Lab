@@ -1,0 +1,110 @@
+==============================================================================
+Generated output Quads for the program
+  0. :t000	=	0 0
+  1. :ans	=	t000 t000
+  2. :t001	=	0 0
+  3. :if  n >t001	goto  6
+  4. :goto 16
+  5. :goto 16
+  6. :t002	=	5 5
+  7. :t003	=	n / t002
+  8. :t004	=	ans + t003
+  9. :ans	=	t004 t004
+ 10. :t005	=	t004 t004
+ 11. :t006	=	5 5
+ 12. :t007	=	n / t006
+ 13. :n	=	t007 t007
+ 14. :t008	=	t007 t007
+ 15. :goto 2
+ 16. :return	ans
+ 17. :t009	=	1 1
+ 18. :tikitaka	=	t009 t009
+ 19. :param	_0
+ 20. :t010	=	call printStr, 1
+ 21. :param	_1
+ 22. :t011	=	call printStr, 1
+ 23. :param	_2
+ 24. :t012	=	call printStr, 1
+ 25. :t013	=	& tikitaka
+ 26. :param	t013
+ 27. :t014	=	call readInt, 1
+ 28. :n	=	t014 t014
+ 29. :t015	=	t014 t014
+ 30. :param	_3
+ 31. :t016	=	call printStr, 1
+ 32. :param	n
+ 33. :t017	=	call printInt, 1
+ 34. :param	_4
+ 35. :t018	=	call printStr, 1
+ 36. :param	n
+ 37. :t019	=	call trialingZeros, 1
+ 38. :param	t019
+ 39. :t020	=	call printInt, 1
+ 40. :param	_5
+ 41. :t021	=	call printStr, 1
+ 42. :t022	=	0 0
+ 43. :return	t022
+==============================================================================
+Symbol table For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	typeVar	size	Offset	Type
+printInt	Null	func		0	-1	ptr-to-St( Global )Int 
+readInt	Null	func		0	-1	ptr-to-St( Global )Int 
+printStr	Null	func		0	-1	ptr-to-St( Global )Int 
+trialingZeros	Null	func		0	-1	ptr-to-St( trialingZeros )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : trialingZeros
+Offset = -44
+Start Quad Index = 0
+End Quad Index =  16
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	param		4	-4	Int 
+ans	0	local		4	-8	Int 
+t000	0	temp		4	-12	Int 
+t001	0	temp		4	-16	Int 
+t002	5	temp		4	-20	Int 
+t003	Null	temp		4	-24	Int 
+t004	Null	temp		4	-28	Int 
+t005	Null	temp		4	-32	Int 
+t006	5	temp		4	-36	Int 
+t007	Null	temp		4	-40	Int 
+t008	Null	temp		4	-44	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -68
+Start Quad Index = 17
+End Quad Index =  43
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	local		4	-4	Int 
+tikitaka	1	local		4	-8	Int 
+t009	1	temp		4	-12	Int 
+t010	Null	temp		4	-16	Int 
+t011	Null	temp		4	-20	Int 
+t012	Null	temp		4	-24	Int 
+t013	Null	temp		8	-32	ptr(Int )
+t014	Null	temp		4	-36	Int 
+t015	Null	temp		4	-40	Int 
+t016	Null	temp		4	-44	Int 
+t017	Null	temp		4	-48	Int 
+t018	Null	temp		4	-52	Int 
+t019	Null	temp		4	-56	Int 
+t020	Null	temp		4	-60	Int 
+t021	Null	temp		4	-64	Int 
+t022	0	temp		4	-68	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

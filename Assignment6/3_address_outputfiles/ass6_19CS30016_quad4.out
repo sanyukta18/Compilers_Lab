@@ -1,0 +1,231 @@
+==============================================================================
+Generated output Quads for the program
+  0. :t000	=	0 0
+  1. :if  s ==t000	goto  4
+  2. :goto 7
+  3. :goto 7
+  4. :t001	=	1 1
+  5. :return	t001
+  6. :goto 7
+  7. :t002	=	0 0
+  8. :if  n ==t002	goto  11
+  9. :goto 14
+ 10. :goto 14
+ 11. :t003	=	0 0
+ 12. :return	t003
+ 13. :goto 14
+ 14. :t004	=	0 0
+ 15. :t005	=	1 1
+ 16. :t006	=	n - t005
+ 17. :t008	=	t006 * 4
+ 18. :t007	=	t004 + t008
+ 19. :t009	=	a[t007]
+ 20. :if  t009 >s	goto  23
+ 21. :goto 32
+ 22. :goto 32
+ 23. :t010	=	0 0
+ 24. :t011	=	1 1
+ 25. :t012	=	n - t011
+ 26. :param	a
+ 27. :param	t012
+ 28. :param	s
+ 29. :t013	=	call subsetSum, 3
+ 30. :return	t013
+ 31. :goto 32
+ 32. :t014	=	0 0
+ 33. :t015	=	1 1
+ 34. :t016	=	n - t015
+ 35. :param	a
+ 36. :param	t016
+ 37. :param	s
+ 38. :t017	=	call subsetSum, 3
+ 39. :t018	=	0 0
+ 40. :if  t017 >t018	goto  60
+ 41. :goto 42
+ 42. :t019	=	0 0
+ 43. :t020	=	1 1
+ 44. :t021	=	n - t020
+ 45. :t022	=	0 0
+ 46. :t023	=	1 1
+ 47. :t024	=	n - t023
+ 48. :t026	=	t024 * 4
+ 49. :t025	=	t022 + t026
+ 50. :t027	=	a[t025]
+ 51. :t028	=	s - t027
+ 52. :param	a
+ 53. :param	t021
+ 54. :param	t028
+ 55. :t029	=	call subsetSum, 3
+ 56. :t030	=	0 0
+ 57. :if  t029 >t030	goto  60
+ 58. :goto 63
+ 59. :goto 63
+ 60. :t031	=	1 1
+ 61. :return	t031
+ 62. :goto 63
+ 63. :t032	=	0 0
+ 64. :return	t032
+ 65. :t033	=	20 20
+ 66. :t034	=	1 1
+ 67. :newton	=	t034 t034
+ 68. :param	_0
+ 69. :t035	=	call printStr, 1
+ 70. :param	_1
+ 71. :t036	=	call printStr, 1
+ 72. :param	_2
+ 73. :t037	=	call printStr, 1
+ 74. :t038	=	& newton
+ 75. :param	t038
+ 76. :t039	=	call readInt, 1
+ 77. :n	=	t039 t039
+ 78. :t040	=	t039 t039
+ 79. :param	_3
+ 80. :t041	=	call printStr, 1
+ 81. :t042	=	0 0
+ 82. :i	=	t042 t042
+ 83. :t043	=	t042 t042
+ 84. :if  i <n	goto  90
+ 85. :goto 99
+ 86. :goto 99
+ 87. :t044	=	i i
+ 88. :i	=	i + 1
+ 89. :goto 84
+ 90. :t045	=	0 0
+ 91. :t047	=	i * 4
+ 92. :t046	=	t045 + t047
+ 93. :t048	=	& newton
+ 94. :param	t048
+ 95. :t049	=	call readInt, 1
+ 96. :a[t046]	=	t049
+ 97. :t050	=	t049 t049
+ 98. :goto 87
+ 99. :param	_4
+100. :t051	=	call printStr, 1
+101. :t052	=	& newton
+102. :param	t052
+103. :t053	=	call readInt, 1
+104. :s	=	t053 t053
+105. :t054	=	t053 t053
+106. :t055	=	0 0
+107. :param	a
+108. :param	n
+109. :param	s
+110. :t056	=	call subsetSum, 3
+111. :t057	=	1 1
+112. :if  t056 ==t057	goto  115
+113. :goto 118
+114. :goto 121
+115. :param	_5
+116. :t058	=	call printStr, 1
+117. :goto 121
+118. :param	_6
+119. :t059	=	call printStr, 1
+120. :goto 121
+121. :t060	=	0 0
+122. :return	t060
+==============================================================================
+Symbol table For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	typeVar	size	Offset	Type
+printInt	Null	func		0	-1	ptr-to-St( Global )Int 
+readInt	Null	func		0	-1	ptr-to-St( Global )Int 
+printStr	Null	func		0	-1	ptr-to-St( Global )Int 
+subsetSum	Null	func		0	-1	ptr-to-St( subsetSum )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : subsetSum
+Offset = -148
+Start Quad Index = 0
+End Quad Index =  64
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+a	Null	param		8	-16	array(-1Int )
+n	Null	param		4	-8	Int 
+s	Null	param		4	-4	Int 
+t000	0	temp		4	-20	Int 
+t001	1	temp		4	-24	Int 
+t002	0	temp		4	-28	Int 
+t003	0	temp		4	-32	Int 
+t004	0	temp		4	-36	Int 
+t005	1	temp		4	-40	Int 
+t006	Null	temp		4	-44	Int 
+t007	Null	temp		4	-48	Int 
+t008	Null	temp		4	-52	Int 
+t009	Null	temp		4	-56	Int 
+t010	0	temp		4	-60	Int 
+t011	1	temp		4	-64	Int 
+t012	Null	temp		4	-68	Int 
+t013	Null	temp		4	-72	Int 
+t014	0	temp		4	-76	Int 
+t015	1	temp		4	-80	Int 
+t016	Null	temp		4	-84	Int 
+t017	Null	temp		4	-88	Int 
+t018	0	temp		4	-92	Int 
+t019	0	temp		4	-96	Int 
+t020	1	temp		4	-100	Int 
+t021	Null	temp		4	-104	Int 
+t022	0	temp		4	-108	Int 
+t023	1	temp		4	-112	Int 
+t024	Null	temp		4	-116	Int 
+t025	Null	temp		4	-120	Int 
+t026	Null	temp		4	-124	Int 
+t027	Null	temp		4	-128	Int 
+t028	Null	temp		4	-132	Int 
+t029	Null	temp		4	-136	Int 
+t030	0	temp		4	-140	Int 
+t031	1	temp		4	-144	Int 
+t032	0	temp		4	-148	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -220
+Start Quad Index = 65
+End Quad Index =  122
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+a	Null	local		80	-80	array(20Int )
+t033	20	temp		4	-84	Int 
+n	Null	local		4	-88	Int 
+i	Null	local		4	-92	Int 
+s	Null	local		4	-96	Int 
+newton	1	local		4	-100	Int 
+t034	1	temp		4	-104	Int 
+t035	Null	temp		4	-108	Int 
+t036	Null	temp		4	-112	Int 
+t037	Null	temp		4	-116	Int 
+t038	Null	temp		8	-124	ptr(Int )
+t039	Null	temp		4	-128	Int 
+t040	Null	temp		4	-132	Int 
+t041	Null	temp		4	-136	Int 
+t042	0	temp		4	-140	Int 
+t043	Null	temp		4	-144	Int 
+t044	Null	temp		4	-148	Int 
+t045	0	temp		4	-152	Int 
+t046	Null	temp		4	-156	Int 
+t047	Null	temp		4	-160	Int 
+t048	Null	temp		8	-168	ptr(Int )
+t049	Null	temp		4	-172	Int 
+t050	Null	temp		4	-176	Int 
+t051	Null	temp		4	-180	Int 
+t052	Null	temp		8	-188	ptr(Int )
+t053	Null	temp		4	-192	Int 
+t054	Null	temp		4	-196	Int 
+t055	0	temp		4	-200	Int 
+t056	Null	temp		4	-204	Int 
+t057	1	temp		4	-208	Int 
+t058	Null	temp		4	-212	Int 
+t059	Null	temp		4	-216	Int 
+t060	0	temp		4	-220	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

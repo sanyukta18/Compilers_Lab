@@ -1,0 +1,101 @@
+==============================================================================
+Generated output Quads for the program
+  0. :t000	=	1 1
+  1. :f	=	t000 t000
+  2. :t001	=	1 1
+  3. :i	=	t001 t001
+  4. :t002	=	t001 t001
+  5. :if  i <=n	goto  11
+  6. :goto 15
+  7. :goto 15
+  8. :t003	=	i i
+  9. :i	=	i + 1
+ 10. :goto 5
+ 11. :t004	=	f * i
+ 12. :f	=	t004 t004
+ 13. :t005	=	t004 t004
+ 14. :goto 8
+ 15. :return	f
+ 16. :t006	=	1 1
+ 17. :err	=	t006 t006
+ 18. :param	_0
+ 19. :t007	=	call printStr, 1
+ 20. :param	_1
+ 21. :t008	=	call printStr, 1
+ 22. :param	_2
+ 23. :t009	=	call printStr, 1
+ 24. :t010	=	& err
+ 25. :param	t010
+ 26. :t011	=	call readInt, 1
+ 27. :n	=	t011 t011
+ 28. :t012	=	t011 t011
+ 29. :param	_3
+ 30. :t013	=	call printStr, 1
+ 31. :param	n
+ 32. :t014	=	call factorial, 1
+ 33. :param	t014
+ 34. :t015	=	call printInt, 1
+ 35. :param	_4
+ 36. :t016	=	call printStr, 1
+ 37. :t017	=	0 0
+ 38. :return	t017
+==============================================================================
+Symbol table For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	typeVar	size	Offset	Type
+printInt	Null	func		0	-1	ptr-to-St( Global )Int 
+readInt	Null	func		0	-1	ptr-to-St( Global )Int 
+printStr	Null	func		0	-1	ptr-to-St( Global )Int 
+factorial	Null	func		0	-1	ptr-to-St( factorial )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : factorial
+Offset = -36
+Start Quad Index = 0
+End Quad Index =  15
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	param		4	-4	Int 
+i	Null	local		4	-8	Int 
+f	1	local		4	-12	Int 
+t000	1	temp		4	-16	Int 
+t001	1	temp		4	-20	Int 
+t002	Null	temp		4	-24	Int 
+t003	Null	temp		4	-28	Int 
+t004	Null	temp		4	-32	Int 
+t005	Null	temp		4	-36	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -60
+Start Quad Index = 16
+End Quad Index =  38
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	local		4	-4	Int 
+err	1	local		4	-8	Int 
+t006	1	temp		4	-12	Int 
+t007	Null	temp		4	-16	Int 
+t008	Null	temp		4	-20	Int 
+t009	Null	temp		4	-24	Int 
+t010	Null	temp		8	-32	ptr(Int )
+t011	Null	temp		4	-36	Int 
+t012	Null	temp		4	-40	Int 
+t013	Null	temp		4	-44	Int 
+t014	Null	temp		4	-48	Int 
+t015	Null	temp		4	-52	Int 
+t016	Null	temp		4	-56	Int 
+t017	0	temp		4	-60	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,120 @@
+==============================================================================
+Generated output Quads for the program
+  0. :t000	=	0 0
+  1. :ans	=	t000 t000
+  2. :t001	=	t000 t000
+  3. :t002	=	0 0
+  4. :if  n >t002	goto  7
+  5. :goto 23
+  6. :goto 23
+  7. :t003	=	10 10
+  8. :t004	=	n %% t003
+  9. :rem	=	t004 t004
+ 10. :t005	=	t004 t004
+ 11. :t006	=	10 10
+ 12. :t007	=	ans * t006
+ 13. :ans	=	t007 t007
+ 14. :t008	=	t007 t007
+ 15. :t009	=	ans + rem
+ 16. :ans	=	t009 t009
+ 17. :t010	=	t009 t009
+ 18. :t011	=	10 10
+ 19. :t012	=	n / t011
+ 20. :n	=	t012 t012
+ 21. :t013	=	t012 t012
+ 22. :goto 3
+ 23. :return	ans
+ 24. :t014	=	1 1
+ 25. :phi	=	t014 t014
+ 26. :param	_0
+ 27. :t015	=	call printStr, 1
+ 28. :param	_1
+ 29. :t016	=	call printStr, 1
+ 30. :param	_2
+ 31. :t017	=	call printStr, 1
+ 32. :t018	=	& phi
+ 33. :param	t018
+ 34. :t019	=	call readInt, 1
+ 35. :n	=	t019 t019
+ 36. :t020	=	t019 t019
+ 37. :param	_3
+ 38. :t021	=	call printStr, 1
+ 39. :param	_4
+ 40. :t022	=	call printStr, 1
+ 41. :param	n
+ 42. :t023	=	call reverse, 1
+ 43. :param	t023
+ 44. :t024	=	call printInt, 1
+ 45. :param	_5
+ 46. :t025	=	call printStr, 1
+ 47. :t026	=	0 0
+ 48. :return	t026
+==============================================================================
+Symbol table For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	typeVar	size	Offset	Type
+printInt	Null	func		0	-1	ptr-to-St( Global )Int 
+readInt	Null	func		0	-1	ptr-to-St( Global )Int 
+printStr	Null	func		0	-1	ptr-to-St( Global )Int 
+reverse	Null	func		0	-1	ptr-to-St( reverse )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : reverse
+Offset = -68
+Start Quad Index = 0
+End Quad Index =  23
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	param		4	-4	Int 
+ans	Null	local		4	-8	Int 
+rem	Null	local		4	-12	Int 
+t000	0	temp		4	-16	Int 
+t001	Null	temp		4	-20	Int 
+t002	0	temp		4	-24	Int 
+t003	10	temp		4	-28	Int 
+t004	Null	temp		4	-32	Int 
+t005	Null	temp		4	-36	Int 
+t006	10	temp		4	-40	Int 
+t007	Null	temp		4	-44	Int 
+t008	Null	temp		4	-48	Int 
+t009	Null	temp		4	-52	Int 
+t010	Null	temp		4	-56	Int 
+t011	10	temp		4	-60	Int 
+t012	Null	temp		4	-64	Int 
+t013	Null	temp		4	-68	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -64
+Start Quad Index = 24
+End Quad Index =  48
+Name	Value	typeVar	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	local		4	-4	Int 
+phi	1	local		4	-8	Int 
+t014	1	temp		4	-12	Int 
+t015	Null	temp		4	-16	Int 
+t016	Null	temp		4	-20	Int 
+t017	Null	temp		4	-24	Int 
+t018	Null	temp		8	-32	ptr(Int )
+t019	Null	temp		4	-36	Int 
+t020	Null	temp		4	-40	Int 
+t021	Null	temp		4	-44	Int 
+t022	Null	temp		4	-48	Int 
+t023	Null	temp		4	-52	Int 
+t024	Null	temp		4	-56	Int 
+t025	Null	temp		4	-60	Int 
+t026	0	temp		4	-64	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
